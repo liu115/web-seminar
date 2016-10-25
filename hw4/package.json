@@ -7,7 +7,8 @@
     "start": "serve .",
     "clean": "rimraf dist",
     "build": "npm run clean && babel src -d dist --copy-files",
-    "build:watch": "npm run build -- --watch"
+    "build:watch": "npm run build -- --watch",
+    "lint": "eslint src"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
@@ -15,6 +16,11 @@
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "rimraf": "^2.5.4",
-    "serve": "^1.4.0"
+    "serve": "^1.4.0",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1"
   }
 }
