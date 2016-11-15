@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import HomePage from './HomePage';
 import UsersPage from './UsersPage';
 import SingleUserPage from './SingleUserPage';
-
+import 'bootstrap/dist/css/bootstrap.css';
 class App extends Component {
   state = {
     route: window.location.hash.substr(1),
@@ -32,9 +32,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1>App</h1>
-        <ul>
+      <div className="container">
+        <h1 className="">App</h1>
+        <ul className="nav nav-tabs">
           <li><a href="#/">Home</a></li>
           <li><a href="#/users">Users</a></li>
         </ul>
