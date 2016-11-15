@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-
+import 'bootstrap/dist/css/bootstrap.css';
 
 class SingleUserPage extends Component {
   static propTypes = {
@@ -29,11 +29,18 @@ class SingleUserPage extends Component {
 
   render() {
     return (
-      <div>
-        User {this.props.id}
-        <p>Name: {this.state.name}</p>
-        <p>Age: {this.state.age}</p>
-        <img src={this.state.avatar} alt="avatar" />
+      <div className="container-fluid">
+
+        <div className="row">
+          <div className="col-sm-4 col-xs-12">
+            <img src={this.state.avatar} alt="avatar" className="img-thumbnail" />
+          </div>
+          <div className="col-sm-8 col-xs-12">
+            Name: {this.state.name}
+            <br />
+            Age: {this.state.age}
+          </div>
+        </div>
       </div>
     );
   }

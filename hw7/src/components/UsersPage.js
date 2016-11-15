@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import 'bootstrap/dist/css/bootstrap.css';
 
 class UsersPage extends Component {
   state = {
