@@ -4,8 +4,8 @@ const router = new Router();
 
 const db = {
   users: [
-    { avatar: 'http://lorempixel.com/200/200/people', name: 'John', age: 23 },
-    { avatar: 'http://lorempixel.com/200/200/people', name: 'Amy', age: 18 },
+    { avatar: '/avatar/0', name: 'John', age: 23 },
+    { avatar: '/avatar/1', name: 'Amy', age: 18 },
   ]
 };
 

@@ -21,6 +21,10 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use('/api', api);
 
+app.get('/avatar/:id', (req, res) => {
+  res.sendFile(path.join(__dirname, `avatar${req.params.id}.jpg`));
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
